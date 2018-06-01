@@ -41,7 +41,7 @@ class Component {
         }
     }
 
-    static setState(nextState) {
+    setState(nextState) {
         if (this.base && this.shouldComponentUpdate(this.props, nextState)) {
             const prevState = this.state;
             this.componentWillUpdate(this.props, nextState);
